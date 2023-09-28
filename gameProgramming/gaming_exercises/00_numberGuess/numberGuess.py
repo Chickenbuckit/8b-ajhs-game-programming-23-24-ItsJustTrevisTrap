@@ -36,6 +36,7 @@ print("""
 
         """)
 # CPU SECRET NUMBER GENERATION
+# REMOVE THE CODE FOR THE while LOOP HERE.  THAT WAS ONLY USED TO TEST THE random.randint() code.  
 x = 0
 while x < 50:
     secretNumber = random.randint(0,20)
@@ -43,10 +44,9 @@ while x < 50:
     x += 1
 print("You need to guess a number from 0 to 20 and you have four guesses. \nIf you guess it right, you get a point. \nIf you get it wrong, you loose a life")
 
-
-
-
-
+###
+# NO DIFFICULTY CODE IMPLEMENTED. [-30]
+###
 
 while playerScore != 3 and cpuScore != 3:
     # pass -- Tells Python to skip this block without giving an error.
