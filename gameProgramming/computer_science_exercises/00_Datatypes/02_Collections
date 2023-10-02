@@ -14,4 +14,14 @@ print(breakfastFoods)
 print(testScores)
 print(classGPA)
 
+# Accessing Specific List Elements -- REMEMBER FIRST ELEMENT IS INDEX 0 
+#print(breakfastFoods[0])
+#print(testScores[0])
+#print(classGPA[0])
+
+# Accessing Last Element in Lists
+#print(breakfastFoods[-1])
+#print(testScores[-1])
+#print(classGPA[-1])
+
 
