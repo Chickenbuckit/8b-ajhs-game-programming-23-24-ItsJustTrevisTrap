@@ -1,6 +1,15 @@
 # Hangman Game by Trevis Brown, v0.1
 import random
-words = 'Acid Knife Bones Bleach Reptile Banshee Spirit Spider Snake Disease Skull Photosynthesis Mental Flatline Havoc Yamaha Glove Lime Green Teal Eyes Teeth Cell Blood Phobia Venus Saturn Kawasaki Kill Wendigo'.split()
+# words = 'Acid Knife Bones Bleach Reptile Banshee Spirit Spider Snake Disease Skull Photosynthesis Mental Flatline Havoc Yamaha Glove Lime Green Teal Eyes Teeth Cell Blood Phobia Venus Saturn Kawasaki Kill Wendigo'.split()
+# DICTIONARY VERSION
+# Stored in Key: Value Pairs.
+# Actual Dictionary Word (Key) : Value (Definition)
+# Uses {} to specify a dictionary.
+words = {'Colors': 'green lime yellow blue cyan indigo black gold white silver navy grey orange teal'.split(),
+         'Animals': 'gecko shark parrot ant cat jellyfish spider mantis iguana bee wasp zebra hyena panda'.split(),
+         'Shapes': 'square triangle circle cube trapizoid sphere diamond rectangle octogon'.split(),
+         'Foods': 'fries milkshake apple pineapple grape watermelon lemon lime kiwi corn dragonfruit strawberry'.split()}
+
 
 #VARIABLE_NAMES in ALL-CAPS ARE CONSTANTS AND NOT MEANT TO CHANGE!
 HANGMAN_BOARD = ['''
@@ -38,13 +47,29 @@ HANGMAN_BOARD = ['''
     O   |    
    /|\  |
    / \  |    
+    =========''','''
+    +---+
+    O   |    
+  o-|-o |
+   / \  |    
+    =========''','''
+    +---+
+    O   |    
+  o-|-o |
+   / \  |
+  o   o |
     =========''']
-
+  
 # Pick Word from List
-def getRandomWord(wordlist): # Return a random word from the list.
-    wordIndex = random.randint(0, len(wordList) - 1)
-    # len(listName) - 1 is EXTREMELY COMMON FOR WORKING WITH LISTS.
-    return wordList[wordIndex]
+# def getRandomWord(wordlist): # Return a random word from the list.
+#     wordIndex = random.randint(0, len(wordList) - 1)
+#     # len(listName) - 1 is EXTREMELY COMMON FOR WORKING WITH LISTS.
+#     return wordList[wordIndex]
+
+def getRandomWord(wordDict): # Return a random word from the list.
+    wordKey = random.choice(list(wordDict.keys()))
+    wordIndex = random.randint(0, len(wordDict[wordKey] - 1))
+    return [wordDict[wordKey][wordIndex], wordKey]
 
 def displayBoard(missedLetters, correctLetters, secretWord):
     print(HANGMAN_BOARD[len(missedLetters)])
@@ -87,6 +112,22 @@ def playAgain():
 
 # Introduce the Game
 print('Welcome to the Game by Trevis.')
+
+# Choose Difficulty
+difficulty = 'X'
+while difficulty not in 'EMH':
+    print('Please Choose Easy, Medium, or Hard. Type the first letter then press enter.\n')
+    difficulty = input().upper()
+if difficulty == 'M': # Medium
+    del HANGMAN_BOARD[]
+    del HANGMAN_BOARD[]
+    
+    del HANGMAN_BOARD[]
+    del HANGMAN_BOARD[]
+    del HANGMAN_BOARD[]
+    del HANGMAN_BOARD[]
+
+
 missedLetters = ' '
 correctLetters = ' '
 secretWord = getRandomWord(words)
