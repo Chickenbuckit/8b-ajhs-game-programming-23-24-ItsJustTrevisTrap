@@ -1,9 +1,12 @@
 # Example Game Functions Project, Trevis Brown, v0.0
 import random
 
+words: {'Colors': 'Red, Yellow, Green, Blue, white, brown, black, grey'.split()
+        'Lights': 'Red light, yellow light, green light, no light, broken light'.split()
+        'MPH': '1 - 300+'.split()
+        'Names': 'car, trafficLight, steering wheel, tire, rims, engine, fire, smoke, '.split()}
 
-
-
+            
 
 
 
