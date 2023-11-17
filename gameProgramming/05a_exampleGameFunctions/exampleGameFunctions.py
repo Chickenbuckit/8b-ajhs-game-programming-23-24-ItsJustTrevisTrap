@@ -1,12 +1,10 @@
 # Example Game Functions Project, Trevis Brown, v0.0
 import random
+# words = ['Engine Wheels Rims Spoiler Pedals GearShift Windows Truck Battery AirFilter OilFilter TailLight Seat Wipers Gaskets SparkPlugs Fender Bumper Suspension DiskBreakv ]
+# DICTIONARY VERSION
+# Stored in key: Value Pairs
+# Actual Dictionary Word (Key) : Value (Definition)
 
-words: {'Colors': 'Red, Yellow, Green, Blue, white, brown, black, grey'.split()
-        'Lights': 'Red light, yellow light, green light, no light, broken light'.split()
-        'MPH': '1 - 300+'.split()
-        'Names': 'car, trafficLight, steering wheel, tire, rims, engine, fire, smoke, '.split()}
-
-            
 
 
 
