@@ -11,3 +11,7 @@ height = 600
 window = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Racing Game")
 
+# Set up the colors
+white = (255, 255, 255)
+black = (0, 0, 0)
+red = (255, 0, 0)
