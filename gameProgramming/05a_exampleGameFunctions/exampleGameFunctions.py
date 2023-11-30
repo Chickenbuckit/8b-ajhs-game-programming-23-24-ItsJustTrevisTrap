@@ -1,6 +1,6 @@
 # Example Game Functions Project, Trevis Brown, v0.0
 import pygame
-import random
+import random                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               # 0w0 Hi! You Found Me
 
 # Initialize pygame
 pygame.init()
@@ -24,3 +24,10 @@ car_img = pygame.transform.scale(car_img, (car_width, car_height))
 car_x = width // 2 - car_width // 2
 car_y = height - car_height - 10
 car_speed = 5     
+
+
+
+
+
+
+#code review by chickenbucket
