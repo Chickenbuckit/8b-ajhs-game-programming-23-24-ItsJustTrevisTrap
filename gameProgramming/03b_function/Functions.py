@@ -1,5 +1,5 @@
 import random
-# FUNCTION  -- a named piece of code that can be reused easily.
+# FUNCTION  -- a named piece of code that can be reused easily.                                                                                                                                                                                                                                                                                                                                       HI! You Found me. 0w0
 # FUNCTION SIGNATURE -- Syntax for creating a new function.
 def exampleFunction(): # NO PARAMETERS
     count = 0
@@ -78,3 +78,4 @@ genStats()
 
 
 
+#CODE REVIEW BY CHICKENBUCKET
